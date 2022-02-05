@@ -245,6 +245,9 @@ section:nth-child(4) {
     width: 4.5rem;
 }
 
+/* RESPONSIVIDADE /////////////////////////*/
+
+
 @media screen and (max-width: 580px) {
 
     body {
@@ -280,11 +283,12 @@ section:nth-child(4) {
     
     .apresentation h1 {
         margin: auto;
+        font-size: 2.4rem;
     }
 
     .apresentation p {
-        margin: 1rem 0;
-        padding-bottom: 2rem;
+        margin: 1.5rem 0;
+        padding-bottom: 1rem;
     }
 
     .banner img {
@@ -300,7 +304,7 @@ section:nth-child(4) {
     }
     .about-me {
         width: 100%;
-        margin-top: 6rem;
+        margin-top: 7rem;
         font-size: .3rem;
     }
 
@@ -310,8 +314,9 @@ section:nth-child(4) {
     }
     
     .about-me p {
-        font-size: .7rem;
+        font-size: .8rem;
         padding: 0 1rem;
+        padding-bottom: 2rem;
     }
 
     .social-media {
@@ -326,11 +331,33 @@ section:nth-child(4) {
     }
     
     .card-projetos {
-        width: 90%;
+        width: 100%;
     }
 
-    .cards-project {
-        width: 7rem;
+    .projects > h1 {
+        font-size: 2rem;
+    }
+
+    .projects .cards-project {
+        width: 10.8rem;
         height: 10rem;
+        margin: .5rem;
+    }
+
+    .skills {
+        width: 100%;
+    }
+
+    .skills > h1 {
+        font-size: 2rem;
+    }
+
+    .skills .cards-skills .skills-card {
+        /* margin: 2rem .4rem;
+        margin-bottom: 2rem;
+        width: 5rem;
+        height: 5rem; */
+        background-color: transparent;
+        border: none
     }
 };
