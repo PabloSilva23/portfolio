@@ -12,12 +12,17 @@ body {
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     background-color: #171717;   
     width: 80rem;
     border: 1px solid white;
     margin: auto;
 }
+
 
 header {
     color: white;
