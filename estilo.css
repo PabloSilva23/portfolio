@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: DM Sans, Open Sans, Poppins, Roboto;
+}
+
+body {
+    background-color: #f3f3f3   
+
+}
+
+.container {
+    background-color: #171717;   
+    width: 80rem;
+    border: 1px solid white;
+    margin: auto;
+}
+
+header {
+    color: white;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 9.3rem;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul a {
+    margin: 0 1.4rem;
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul a:hover {
+    cursor: pointer;
+}
+
+nav a::before {
+    content: '';
+    display: inline-block;
+    height: .11rem;
+    width: 100%;
+    background-color: #3e34f3;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform .3s;
+    transform-origin: right;
+}
+
+nav a:hover::before {
+    width: 100%;
+    transform: scaleX(1);
+    transition: transform .3s;
+    transform-origin: left;
+}
+
+.banner {
+    position: relative;
+    color: white;
+    display: flex;
+    top: 3.8rem;
+    justify-content: space-between;
+    padding: 0 9.3rem;
+    align-items: center;
+}
+
+.banner img {
+    width: 25rem;
+}
+
+.apresentation h1 {
+    width: 6em;
+    font-size: 2rem;
+}
+
+.apresentation p {
+    margin: 1.8rem 0;
+}
+
+.apresentation a {
+    padding: .8rem;
+    background-color: #5d55fa;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 2rem;
+    text-decoration: none;
+    transition: background-color .5s;
+}
+
+.apresentation a:nth-child(3) {
+    margin-right: .6rem;
+}
+
+.apresentation a:hover {
+    background-color: #3e34f3;
+    cursor: pointer;
+}
+
+.about-me {
+    width: 50rem;
+    text-align: justify;
+    margin: auto;
+    margin-top: 10rem;
+    color: white;
+}
+
+.about-me h1 {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.about-me p {
+    text-indent: 2em;
+}
+
+.about-me .social-media {
+    display: flex;
+    justify-content: space-between;
+    height: 13rem;
+}
+
+.social-media .card {
+    cursor: pointer;
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .input-image {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+
+.card h3 {
+    font-size: 1rem;
+}
+
+.card p {
+    text-align: center;
+    text-indent: 0;
+    font-size: .8rem;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h3 {
+    margin-top: .8rem;
+    font-size: 1.125rem;
+}
+
+section:nth-child(3) {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 4rem;
+}
+
+.card-projetos {
+    color: white;
+    width: 67rem;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    
+}
+
+.projects .cards-project {
+    width: 20rem;
+    height: 14rem;
+    margin: 1rem;
+    background-color: #212121;
+    border: .0625rem solid #333333;
+}
+
+.cards-project h3 {
+    color: red;
+    font-size: 1.1rem;
+}
+
+.cards-project img {
+    width: 90%;
+}
+
+
+section:nth-child(4) {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 9rem;
+}
+
+.skills {
+    width: 67rem;
+    margin: auto;
+    color: white;
+}
+
+.cards-skills {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.skills-card {
+    width: 9.375rem;
+    height: 9.375rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #212121;
+    border: .0625rem solid #333333;
+    margin: 0 1rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.skills-card img {
+    width: 5rem;
+}
+
+.skills-card .js {
+    width: 4.5rem;
+}
